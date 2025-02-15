@@ -11,6 +11,7 @@
 <body>
     <h1>Add Questions For Online Quiz</h1>
     <?php
+    // session_start();
     include('../config.php');
     if (isset($_POST['submit'])) {
         $question_num = $_POST['question_num'];
@@ -27,6 +28,11 @@
         $query = "insert into questions values('$question_num','$questions')";
         $result = $conn->query($query);
         if ($result) {
+            
+            // $row = $result->fetch_assoc();
+            //     $_SESSION['question_num'] = $row['question_num'];
+            //     echo ($row['question_num']);
+                
             foreach ($choice as $option => $value) {
                 if ($value != "") {
                     if ($correct_choice == $option) {
