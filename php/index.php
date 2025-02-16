@@ -15,6 +15,6 @@
 <body>
     <h1>Online Quiz System</h1>
    <a href="add_quiz.php"><button>Add Questions</button></a> 
-    <a href="quiz.php?n=2"><button>Start Quiz</button></a>
+    <a href="quiz.php?n=1"><button>Start Quiz</button></a>
 </body>
 </html>
